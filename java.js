@@ -1,6 +1,7 @@
 // console.log("Hello, World!");
 var weight = 70; // weight in kg
 var price = 100; // price in dollars
+var height= parseInt("180"); // height in cm, parsed as integer here parseInt is covert string to int
 console.log(weight)
 var name =" Mahidur";
 console.log(name);
@@ -9,3 +10,28 @@ var isActive = true; // boolean value
 console.log(isActive);
 var isnotActive = false; // boolean value
 console.log(isnotActive);
+console.log(typeof name); // string
+console.log(weight+ height); // number
+// var firstnumber = 0.1
+// var secondnumber = 0.2;
+// total = firstnumber + secondnumber; // floating point addition
+// console.log(total.toFixed(4)); // 0.30000000000000004 due
+// console.log(total,toFixed(5)); // 0.30
+// || eta or condition
+// && eta and condition
+
+// ternary operator
+var age = 20;
+// if (age >= 18) {
+//     console.log("You are an adult.");   
+// }   
+// else {
+//     console.log("You are a minor.");
+// }
+// condition ? when true : when false
+age >= 18 ? console.log("You are an adult.") : console.log("You are a minor.");
+// string is immutable
+// array is mutable
+const name1 = "Mahidur Rahman"; // string
+console.log (name1.toLowerCase()); // convert to lowercase
+console.log(name1.toUpperCase()); // convert to uppercase
