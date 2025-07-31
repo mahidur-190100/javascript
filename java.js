@@ -35,3 +35,9 @@ age >= 18 ? console.log("You are an adult.") : console.log("You are a minor.");
 const name1 = "Mahidur Rahman"; // string
 console.log (name1.toLowerCase()); // convert to lowercase
 console.log(name1.toUpperCase()); // convert to uppercase
+// slice method
+console.log(name1.slice(0, 5)); // Mahid
+// split method
+console.log(name1.split(" ")); // ["Mahidur", "Rahman"]
+// join method
+console.log(name1.split(" ").join("-")); // Mahidur-Rahman
