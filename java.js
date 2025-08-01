@@ -56,4 +56,26 @@ console.log(bottle.brand) // Accessing object property
 console.log(bottle["brand"]) // Accessing object property with strings second way
 console.log(bottle["brand-names"]) // Accessing object property with space. Space varribale dot die acces hoy na
 bottle["price"] = 2.0; // Updating object property of price
-console.log(bottle.price); // Accessing updated price
+console.log(bottle.price); 
+console.log(Object.values(bottle)); // Get all values of the object
+console.log(Object.keys(bottle)); // Get all keys of the object
+const mobile ={
+    brand: "Samsung",
+    price: 500,
+    color: "Black",
+    isSmartphone: true,
+    features: ["Camera", "Bluetooth", "Wi-Fi"],
+}
+
+for (const prop in mobile) {
+    console.log(prop)
+    console.log(mobile[prop]); // Accessing object properties using for-in loop
+}
+// for of : array er jonno use hoy
+// for in : object er jonno use hoy
+const keys = Object.keys(mobile); // Get all keys of the object
+console.log(keys); // ["brand", "price", "color", "isSmartphone", "features"]
+for (const key1 of keys) {
+    console.log(key1 ,':', mobile[key1]); // Accessing keys using for-of loop
+    
+}
