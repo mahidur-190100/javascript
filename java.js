@@ -48,6 +48,12 @@ const bottle={
     price: 1.5,
     color: "White",
     isClean: false,
-    isUse: true
+    isUse: true,
+    // jodi space die varibale declare kori tahole string kore korte hobe
+    "brand-names": ["Coca-Cola, Pepsi, Sprite"],
 }
-console.log(bottle.brand); // Accessing object property
+console.log(bottle.brand) // Accessing object property
+console.log(bottle["brand"]) // Accessing object property with strings second way
+console.log(bottle["brand-names"]) // Accessing object property with space. Space varribale dot die acces hoy na
+bottle["price"] = 2.0; // Updating object property of price
+console.log(bottle.price); // Accessing updated price
