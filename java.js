@@ -12,7 +12,7 @@ var isnotActive = false; // boolean value
 console.log(isnotActive);
 console.log(typeof name); // string
 console.log(weight+ height); // number
-// var firstnumber = 0.1
+// var firstnumber = 0.1;
 // var secondnumber = 0.2;
 // total = firstnumber + secondnumber; // floating point addition
 // console.log(total.toFixed(4)); // 0.30000000000000004 due
@@ -41,3 +41,13 @@ console.log(name1.slice(0, 5)); // Mahid
 console.log(name1.split(" ")); // ["Mahidur", "Rahman"]
 // join method
 console.log(name1.split(" ").join("-")); // Mahidur-Rahman
+
+// object method
+const bottle={
+    brand: "Coca-Cola",
+    price: 1.5,
+    color: "White",
+    isClean: false,
+    isUse: true
+}
+console.log(bottle.brand); // Accessing object property
