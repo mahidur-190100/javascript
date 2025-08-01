@@ -76,6 +76,22 @@ for (const prop in mobile) {
 const keys = Object.keys(mobile); // Get all keys of the object
 console.log(keys); // ["brand", "price", "color", "isSmartphone", "features"]
 for (const key1 of keys) {
-    console.log(key1 ,':', mobile[key1]); // Accessing keys using for-of loop
-    
+    console.log(key1 ,':', mobile[key1]); // Accessing keys using for-of loop  
+}
+// break loop i am done the loop and end here
+// continue loop i am done this iteration and continue to next iteration
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        console.log("Reached 5, breaking the loop.");
+        break; // Breaks the loop when i is 5
+    }
+    console.log(i);
+}
+console.log("Loop ended.")
+for (let i = 0; i < 10; i++) {
+    if (i%2 === 1) {
+       
+        continue; // Skips the current iteration when i is 5
+    }
+    console.log(i);
 }
