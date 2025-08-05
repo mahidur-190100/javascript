@@ -82,9 +82,17 @@ const nestedArray = [
     [4, 5, 6],
     [7, 8, 9]
 ];
+// why undefined ashe sort hoitese na
 console.log(nestedArray[0][1]); // Accessing element in nested array
 console.log("using loop")
 for (const subArray of nestedArray) {
     console.log(subArray[1][0]); // Accessing each sub-array
 
 }
+
+// array jodi copy kore boshai tahole array jkhane change kori na keno shob jaigay change hobe
+const originalArray = [1, 2, 3];
+const copiedArray = originalArray; // This creates a reference, not a copy
+copiedArray[0] = 10; // Changing copiedArray will also change originalArray
+console.log(originalArray); // [10, 2, 3] - originalArray is also changed
+console.log(copiedArray); // [10, 2, 3] - copiedArray reflects the change
