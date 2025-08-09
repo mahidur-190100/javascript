@@ -96,3 +96,15 @@ const copiedArray = originalArray; // This creates a reference, not a copy
 copiedArray[0] = 10; // Changing copiedArray will also change originalArray
 console.log(originalArray); // [10, 2, 3] - originalArray is also changed
 console.log(copiedArray); // [10, 2, 3] - copiedArray reflects the change
+
+
+// function
+// kono function er moddhe return thakle shei function varribale e set kore call korte hoy
+function add(a, b) {
+    const sum= a+b
+    return sum; // Return the sum of a and b
+}
+const result = add(5, 3); // Call the function and store the result
+console.log(result); // Output: 8 - result will be 8
+console.log("--------")
+console.log(add(10, 20)); // Directly calling the function without storing the result
